@@ -90,7 +90,16 @@ final class ImController extends BaseController
         $type = $args['type'];
 
         if ($type === 'telegram') {
-            $webhook_url = $_ENV['baseUrl'] . '/callback/telegram?token=' . Config::obtain('telegram_webhook_token');
+            $webhook_token = Config::obtain('telegram_webhook_token');
+
+            if (! is_string($webhook_token) || $webhook_token === '') {
+                return $response->withJson([
+                    'ret' => 0,
+                    'msg' => 'Please reset the Telegram webhook token first',
+                ]);
+            }
+
+            $webhook_url = $_ENV['baseUrl'] . '/callback/telegram?token=' . $webhook_token;
 
             try {
                 $telegram = new Api($request->getParam('bot_token'));

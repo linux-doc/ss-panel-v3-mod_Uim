@@ -36,8 +36,15 @@ final class CallbackController extends BaseController
     public function telegram(ServerRequest $request, Response $response, array $args): ResponseInterface
     {
         $token = $request->getQueryParam('token');
+        $bot_token = Config::obtain('telegram_token');
+        $webhook_token = Config::obtain('telegram_webhook_token');
 
-        if (Config::obtain('telegram_token') !== '' && $token === Config::obtain('telegram_webhook_token')) {
+        if (
+            is_string($bot_token) && $bot_token !== '' &&
+            is_string($webhook_token) && $webhook_token !== '' &&
+            is_string($token) && $token !== '' &&
+            hash_equals($webhook_token, $token)
+        ) {
             Telegram::process($request);
 
             return $response->withStatus(204);
