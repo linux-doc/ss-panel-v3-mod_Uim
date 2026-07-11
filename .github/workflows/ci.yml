@@ -2,7 +2,7 @@ name: CI Pipeline
 
 on:
   push:
-    branches: [ master, dev ]
+    branches: [ master ]
   pull_request:
     types: [ opened, reopened, synchronize ]
 

@@ -3,7 +3,7 @@ name: Auto Minify CSS/JS
 on:
   workflow_dispatch:
   push:
-    branches: [ dev ]
+    branches: [ master ]
     paths:
       - 'public/assets/css/**/*.css'
       - 'public/assets/js/**/*.js'

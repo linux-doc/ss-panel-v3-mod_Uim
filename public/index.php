@@ -3,7 +3,7 @@
 /**
  * SSPanel-Uim Public Entrance File
  *
- * @license MIT(https://github.com/Anankke/SSPanel-Uim/blob/dev/LICENSE)
+ * @license MIT(https://github.com/Anankke/SSPanel-Uim/blob/master/LICENSE)
  *          Addition: You shouldn't remove staff page or entrance of that page.
  */
 

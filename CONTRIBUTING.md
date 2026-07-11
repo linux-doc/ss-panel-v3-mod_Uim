@@ -9,7 +9,7 @@
 
 1. Fork the repository
 2. Create a new branch for each feature or improvement
-3. Send a pull request from each feature branch against the dev branch.
+3. Send a pull request from each feature branch against the master branch.
 
 It is very important to separate new features or improvements into separate feature branches, and to send a
 pull request for each branch. This allows each feature or improvement to be reviewed and merged individually.
@@ -50,7 +50,7 @@ Please use the function from PSR-7 like `$request->getParsedBodyParam()`, `getPa
 
 1. Fork 本项目
 2. 为每一项新特性或改进创建一个新的分支
-3. 为每一项新特性或改进创建一个独立的 Pull Request 至 dev 分支
+3. 为每一项新特性或改进创建一个独立的 Pull Request 至 master 分支
 
 我们建议你将不同的新特性置于不同的分支并以不同的 Pull Request 提交，这将有利于我们独立审查代码并独立合并。
 

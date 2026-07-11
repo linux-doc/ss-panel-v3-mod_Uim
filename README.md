@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Anankke/SSPanel-UIM/blob/dev/LICENSE">
+  <a href="https://github.com/Anankke/SSPanel-UIM/blob/master/LICENSE">
     <img src="https://custom-icon-badges.demolab.com/badge/License-MIT-blue.svg?logo=law&logoColor=white" alt="License">
   </a>
   <a href="https://github.com/Anankke/SSPanel-UIM/issues">
@@ -176,7 +176,7 @@ Welcome to submit Pull Requests or Issues! Please read [Contributing Guide](CONT
 ### 开发规范 | Development Standards
 - 代码风格 | Code Style: PSR-12
 - 提交规范 | Commit Convention: 参考贡献指南 | See Contributing Guide
-- 分支策略 | Branch Strategy: 向 dev 分支提交 | Submit to dev branch
+- 分支策略 | Branch Strategy: 向 master 分支提交 | Submit to master branch
 
 ## 安全 | Security
 
